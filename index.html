@@ -36,17 +36,13 @@
 	
 	<style>
   .wechat-button {
-    /* Style your button as needed */
-    cursor: pointer;
-    /* Add styles for your WeChat logo button */
-  }
-
+        cursor: pointer;
+      }
   .wechat-qr {
-    display: none; /* Hide the QR code initially */
-    position: fixed; /* Or absolute, depending on your needs */
+    display: none; 
+    position: fixed;
     width="80" height="80">
   }
-
   </style>
 </head>
 <body>
@@ -63,9 +59,9 @@
   document.getElementById('wechatButton').onclick = function() {
     var qrCode = document.getElementById('wechatQR');
     if (qrCode.style.display === "none") {
-      qrCode.style.display = "block"; // Show the QR code
+      qrCode.style.display = "block";
     } else {
-      qrCode.style.display = "none"; // Hide the QR code
+      qrCode.style.display = "none";
     }
   };
 </script>
